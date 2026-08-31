@@ -9,4 +9,6 @@ in this lab, we need to explore the `RTP` protocol, so let`s check its definitio
 Answer: `UDP`
 
 ## Question 2: The attacker used a bunch of scanning tools that belong to the same suite. Provide the name of the suite.
-In file `log.txt`, we can see
+In `log.txt`, we can see that almost all requests have the `User-Agent` field set to `friendly-scanner`. Looking this up online reveals that this User-Agent belongs to the `SIPVicious` suite.
+
+Answer: `SIPVicious`
