@@ -20,6 +20,7 @@ Answer: `SIPVicious`
 
 ## Question 3: What is the User-Agent of the victim system?
 the first two packets in the `pcap`file that we were given are belong to the `SIP` protocol. The machine `172.25.105.43` sent a request to check the status of the victim machine that is `172.25.105.40` and the victim sent back a packet to verify the status, in this packet we can find the `user-agent` of the victim machine.
+
 <img width="533" height="323" alt="image" src="https://github.com/user-attachments/assets/ecac8ca2-57f2-42b5-9eae-e97bfa909480" />
 
 Answer: `Asterisk PBX 1.6.0.10-FONCORE-r40`
