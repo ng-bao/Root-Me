@@ -24,3 +24,5 @@ the first two packets in the `pcap`file that we were given are belong to the `SI
 <img width="533" height="323" alt="image" src="https://github.com/user-attachments/assets/ecac8ca2-57f2-42b5-9eae-e97bfa909480" />
 
 Answer: `Asterisk PBX 1.6.0.10-FONCORE-r40`
+
+## Question 4: Which tool was only used against the following extensions: 100,101,102,103, and 111?
