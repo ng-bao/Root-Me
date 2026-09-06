@@ -26,3 +26,11 @@ the first two packets in the `pcap`file that we were given are belong to the `SI
 Answer: `Asterisk PBX 1.6.0.10-FONCORE-r40`
 
 ## Question 4: Which tool was only used against the following extensions: 100,101,102,103, and 111?
+With these extensions, we can see each of them has `REGISTER` requests with `Authorization` information except extension 100. It looks like a password `brute-force` attack, indicating that the attacker used `svcrack.py` in this situation. As for why extension 100 lacks `Authorization` packets, we suspect this extension does not require a password, so the tool didn`t send any Authorization packets.
+
+Answer: `svcrack.py`
+
+## Question 5: Which extension on the honeypot does NOT require authentication?
+As mentioned in Q4, extension 100 is the only one didn't has `Authorization` packets when it was `brute-forced` by `svcrack`.
+
+Answer: `100`
