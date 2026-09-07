@@ -34,3 +34,11 @@ Answer: `svcrack.py`
 As mentioned in Q4, extension 100 is the only one didn't has `Authorization` packets when it was `brute-forced` by `svcrack`.
 
 Answer: `100`
+
+## Question 7: There is a trace for a real SIP client. What is the corresponding user-agent? (two words, once space in between)
+
+## Questiom 8: Multiple real-world phone numbers were dialed. What was the most recent 11-digit number dialed from extension 101?
+We can find the most recent number dialed by determining the most recent `INVITE` packet was sent by extension 101 at `2010-05-05 10:00:46.147670`
+<img width="583" height="433" alt="image" src="https://github.com/user-attachments/assets/9b9080c6-c3c9-452e-9b63-f711bd0f875d" />
+
+Answer: `00112524021`
