@@ -42,3 +42,11 @@ We can find the most recent number dialed by determining the most recent `INVITE
 <img width="583" height="433" alt="image" src="https://github.com/user-attachments/assets/9b9080c6-c3c9-452e-9b63-f711bd0f875d" />
 
 Answer: `00112524021`
+
+## Question 10: Which codec does the RTP stream use? (3 words, 2 spaces in between)
+We can identify the audio codec by checking `Telephony -> RTP -> RTP Streams`
+<img width="1280" height="56" alt="image" src="https://github.com/user-attachments/assets/58c4efde-df0b-4eb7-bde2-b73167798912" />
+
+In the `Payload` field, we can see the codec which the RTP steam use, then fill the answer following answer format.
+
+Answer: `ITU-T G.711 PCMU`
