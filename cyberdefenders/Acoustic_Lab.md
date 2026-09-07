@@ -43,6 +43,9 @@ We can find the most recent number dialed by determining the most recent `INVITE
 
 Answer: `00112524021`
 
+## Question 9: What are the default credentials used in the attempted basic authentication? (format is username:password)
+
+
 ## Question 10: Which codec does the RTP stream use? (3 words, 2 spaces in between)
 We can identify the audio codec by checking `Telephony -> RTP -> RTP Streams`
 <img width="1280" height="56" alt="image" src="https://github.com/user-attachments/assets/58c4efde-df0b-4eb7-bde2-b73167798912" />
