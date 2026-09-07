@@ -50,3 +50,4 @@ We can identify the audio codec by checking `Telephony -> RTP -> RTP Streams`
 In the `Payload` field, we can see the codec which the RTP steam use, then fill the answer following answer format.
 
 Answer: `ITU-T G.711 PCMU`
+
