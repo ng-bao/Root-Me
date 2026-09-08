@@ -3,7 +3,6 @@
 
 # Solve
 
-
 ## Question 1: What is the transport protocol being used?
 in this lab, we need to explore the `RTP` protocol, so let`s check its definition.
 > A protocol is designed to handle real-time traffic (like audio and video) of the Internet, is known as Real Time Transport Protocol (RTP). RTP must be used with `UDP`.
@@ -38,14 +37,19 @@ Answer: `100`
 ## Question 7: There is a trace for a real SIP client. What is the corresponding user-agent? (two words, once space in between)
 
 ## Questiom 8: Multiple real-world phone numbers were dialed. What was the most recent 11-digit number dialed from extension 101?
-We can find the most recent number dialed by determining the most recent `INVITE` packet was sent by extension 101 at `2010-05-05 10:00:46.147670`
+We can find the most recent number dialed by determining the most recent `INVITE` packet was sent by extension 101 at `2010-05-05 10:00:46.147670`.
+
 <img width="583" height="433" alt="image" src="https://github.com/user-attachments/assets/9b9080c6-c3c9-452e-9b63-f711bd0f875d" />
 
 Answer: `00112524021`
 
 ## Question 9: What are the default credentials used in the attempted basic authentication? (format is username:password)
+<img width="814" height="164" alt="image" src="https://github.com/user-attachments/assets/fa27a207-d6cb-46ac-958a-b6d078a22dcf" />
 
+The attacker initially attempted to access the `/maint` page but was blocked by a password prompt. They then navigated back to the base IP address and were automatically redirected to users (packets `16`, `18`, `26`, `39`). After another failed attempt without credentials (packets `50`, `52`), the attacker retried with a password and successfully gained access, as seen in packets `60`, `62`, `71`, and `92`.
+<img width="637" height="392" alt="image" src="https://github.com/user-attachments/assets/c215ed37-e6bc-4d5e-b219-cad6260d971d" />
 
+Answer: `maint:password`
 ## Question 10: Which codec does the RTP stream use? (3 words, 2 spaces in between)
 We can identify the audio codec by checking `Telephony -> RTP -> RTP Streams`
 <img width="1280" height="56" alt="image" src="https://github.com/user-attachments/assets/58c4efde-df0b-4eb7-bde2-b73167798912" />
