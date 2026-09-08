@@ -35,6 +35,10 @@ As mentioned in Q4, extension 100 is the only one didn't has `Authorization` pac
 Answer: `100`
 
 ## Question 7: There is a trace for a real SIP client. What is the corresponding user-agent? (two words, once space in between)
+Beside the `User-Agent: friendly-scanner` belongs to `SIPvicios` suite, we also have another `User-Agent` which is real SIP client.
+<img width="499" height="65" alt="image" src="https://github.com/user-attachments/assets/4f9f77e1-8b67-4c33-94f3-920b412c6155" />
+
+Answer: `Zoiper rev.6751`
 
 ## Questiom 8: Multiple real-world phone numbers were dialed. What was the most recent 11-digit number dialed from extension 101?
 We can find the most recent number dialed by determining the most recent `INVITE` packet was sent by extension 101 at `2010-05-05 10:00:46.147670`.
@@ -54,7 +58,7 @@ Answer: `maint:password`
 We can identify the audio codec by checking `Telephony -> RTP -> RTP Streams`
 <img width="1280" height="56" alt="image" src="https://github.com/user-attachments/assets/58c4efde-df0b-4eb7-bde2-b73167798912" />
 
-In the `Payload` field, we can see the codec which the RTP steam use, then fill the answer following answer format.
+In the `Payload` field, we can see the codec which the RTP steam use, then fill the answer following to answer format.
 
 Answer: `ITU-T G.711 PCMU`
 
